@@ -6,6 +6,7 @@ describe "GET '/' - Greeting Form" do
     visit '/'
     expect(page.body).to include("Welcome!")
   end
+  #Most of that code is actually vanilla RSpec. Capybara provides two new methods, visit and page.
 
   # New test
   it 'has a greeting form with a user_name field' do
